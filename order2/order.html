@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+        }
+
+        .center {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #burger {
+            width: 45vw;
+            height: 45vw;
+            position: relative;
+        }
+
+        #chooser {
+            display: flex;
+            width: 45vw;
+            height: 45vw;
+            
+        }
+
+        #chooser div {
+            width: 50%;
+            display:flex;
+            flex-direction: column;
+        }
+
+        #chooser > div > div:hover {
+            cursor: pointer;
+        }
+
+        .burger-layer {
+            height: 30%;
+            width: 80%;
+            max-width: 500px;
+            display: flex;
+            position: absolute;
+            left: 50%;
+        }
+
+        .burger-layer img {
+            position: relative;
+            height: 70%;
+            left: -50%
+        }
+
+        .element {
+            margin: 1rem 0;
+        }
+
+        .element img {
+            width: auto;
+            height: 2rem;
+        }
+
+        #chooser div h3{
+            font-weight: 500;
+            font-size: 1rem;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+        }
+
+        .cancel {
+            width: 4rem;
+            height: 4rem;
+            
+        }
+
+        .cancel::after, .add::after {
+            content: '';
+            position: absolute;
+            width: 3rem;
+            height: 3rem;
+            
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: 10;
+            opacity: 0;
+            transform: scale(0) translate(0rem, 10rem);
+            transition: all 200ms ease-in-out;
+        }
+
+        .cancel::after {
+            background-image: url("icons/close.png");
+        }
+
+        .add::after {
+            background-image: url("icons/check.png");
+        }
+
+        .cancel:hover::after, .add:hover::after{
+            transform: initial;
+            opacity: initial;
+        }
+
+        
+        @media (max-width: 800px) {
+            .container {
+                flex-direction: column;
+            }
+
+            #burger {
+                width: 100%;
+                height: 80vh;
+            }
+
+            #chooser {
+                width: 100%;
+                height: 60vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container center">
+        <div id="burger" class="center">
+            
+        </div>
+        <div id="chooser">
+            <div class="center" id="add">
+                <h3>CHOOSE</h3>
+            </div>
+            <div class="center" id="remove">
+                <h3>CANCEL</h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+
+</html>
