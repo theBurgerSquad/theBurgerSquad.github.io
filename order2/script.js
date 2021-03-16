@@ -78,7 +78,7 @@ function set_layers() {
     for (i = 0; layer_exists(i); i++) {
         let burger = document.querySelector('#burger');
         let layer = get_layer(i);
-        let val = i * (layer.clientHeight/2);
+        let val = i * (layer.clientHeight/4.5);
         layer.style.bottom = `${val}px`;
     }
 }
