@@ -2,39 +2,61 @@ const elements = [
     {
         id: 0,
         name: 'Top bun',
-        price: 1,
-        image: 'burger/top_bun.png'
+        price: 0,
+        image: 'burger/top-bun.png'
     },
     {
         id: 1,
-        name: 'Bottom bun',
-        price: 2,
-        image: 'burger/bottom_bun.png'
+        name: 'Top bun sesame',
+        price: 0,
+        image: 'burger/top-bun-sesame.png'
     },
     {
         id: 2,
-        name: 'Patty',
-        price: 3,
-        image: 'burger/patty.png'
+        name: 'Bottom bun',
+        price: 0,
+        image: 'burger/bottom-bun.png'
     },
     {
         id: 3,
-        name: 'Salad',
-        price: 4,
-        image: 'burger/lettuce.png'
-    }
-    ,
+        name: 'Middle bun',
+        price: 0,
+        image: 'burger/middle-bun.png'
+    },
     {
         id: 4,
-        name: 'Ham',
-        price: 4,
-        image: 'burger/ham.png'
-    }
-    ,
+        name: 'Bacon',
+        price: 0,
+        image: 'burger/bacon.png'
+    },
     {
         id: 5,
+        name: 'Chicken Patty',
+        price: 0,
+        image: 'burger/chicken-patty.png'
+    },
+    {
+        id: 6,
+        name: 'Patty Cheese',
+        price: 0,
+        image: 'burger/patty-cheese.png'
+    },
+    {
+        id: 7,
+        name: 'Patty Normal',
+        price: 0,
+        image: 'burger/patty.png'
+    },
+    {
+        id: 8,
+        name: 'Salad',
+        price: 0,
+        image: 'burger/salad.png'
+    },
+    {
+        id: 9,
         name: 'Tomatoes',
-        price: 4,
+        price: 0,
         image: 'burger/tomatoes.png'
     }
 ];
@@ -56,7 +78,7 @@ function set_layers() {
     for (i = 0; layer_exists(i); i++) {
         let burger = document.querySelector('#burger');
         let layer = get_layer(i);
-        let val = i * (layer.clientHeight/5);
+        let val = i * (layer.clientHeight/2);
         layer.style.bottom = `${val}px`;
     }
 }
