@@ -22,6 +22,9 @@ main {
     transform: scale(0.99);
 }
 
+textarea {
+    resize: none;
+}
 /* BURGER */
 .burger {
     height: 100px;
