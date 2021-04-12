@@ -70,8 +70,9 @@
         for (item of cart) {
             contCart.appendChild(parseToHTML(
                 `
-                <div class="burger bg-info rounded m-1 d-flex justify-content-center align-items-center">
-                <h6>Burger ${item.ID}</h6>
+                <div class="burger rounded m-1 d-flex justify-content-center align-items-center position-relative">
+                <h4 class="position-absolute text-light">${item.ID}</h4>
+                <img class=" img-fluid" src="/assets/images/burger.png" alt="">
                 </div>
                 `
             ));
