@@ -28,49 +28,8 @@
         <section id="builder" class="row">
             <div class="col-12 col-md-4 text-center mt-4 mt-md-0">
                 <h4>Choose</h4>
-                <ul class="list-group mb-3">
-                    <li class="list-group-item d-flex justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-plus-circle pr-2"></i>
-                            <h6 class="my-0">Ingredient</h6>
-                        </div>
-                        <span class="text-muted">$12</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-plus-circle pr-2"></i>
-                            <h6 class="my-0">Ingredient</h6>
-                        </div>
-                        <span class="text-muted">$12</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-plus-circle pr-2"></i>
-                            <h6 class="my-0">Ingredient</h6>
-                        </div>
-                        <span class="text-muted">$12</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-plus-circle pr-2"></i>
-                            <h6 class="my-0">Ingredient</h6>
-                        </div>
-                        <span class="text-muted">$12</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-plus-circle pr-2"></i>
-                            <h6 class="my-0">Ingredient</h6>
-                        </div>
-                        <span class="text-muted">$12</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-plus-circle pr-2"></i>
-                            <h6 class="my-0">Ingredient</h6>
-                        </div>
-                        <span class="text-muted">$12</span>
-                    </li>
+                <ul id="cont-add-ingredient" class="list-group mb-3">
+                    
                 </ul>
             </div>
             <div class="col-12 col-md-4 text-center mt-4 mt-md-0">
@@ -85,32 +44,12 @@
             </div>
             <div class="col-12 col-md-4 text-center mt-4 mt-md-0">
                 <h4>Confirm</h4>
-                <ul class="list-group mb-3">
-                    <li class="list-group-item d-flex justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-minus-circle pr-2"></i>
-                            <h6 class="my-0">Ingredient</h6>
-                        </div>
-                        <span class="text-muted">$12</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-minus-circle pr-2"></i>
-                            <h6 class="my-0">Ingredient</h6>
-                        </div>
-                        <span class="text-muted">$12</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-minus-circle pr-2"></i>
-                            <h6 class="my-0">Ingredient</h6>
-                        </div>
-                        <span class="text-muted">$12</span>
-                    </li>
+                <ul id="cont-remove-ingredient" class="list-group mb-3">
+                    
                 </ul>
                 <li class="list-group-item d-flex justify-content-between">
                     <span>Total (USD)</span>
-                    <strong>$20</strong>
+                    <strong id="cont-burger-price">$20</strong>
                 </li>
             </div>
 
@@ -179,7 +118,8 @@
     <script src="https://kit.fontawesome.com/d7579bbfc5.js" crossorigin="anonymous"></script>
 
     <!-- Custom JavaScript -->
-    <script src="assets/scripts/script.js"></script>
+    <script type="module" src="assets/scripts/script.js"></script>
+    <script type="module" src="assets/scripts/elements.js"></script>
 </body>
 
 </html>
