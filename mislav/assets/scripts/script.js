@@ -72,7 +72,7 @@
                 `
                 <div class="burger rounded m-1 d-flex justify-content-center align-items-center position-relative">
                 <h4 class="position-absolute text-light">${item.ID}</h4>
-                <img class=" img-fluid" src="assets/images/burger.png" alt="">
+                <img class=" img-fluid" src="assets/images/burger.PNG" alt="">
                 </div>
                 `
             ));
