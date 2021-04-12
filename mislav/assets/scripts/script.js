@@ -155,13 +155,13 @@ import { createAddIngredient, createRemoveIngredient, createCartItem } from "./e
         let pretty = "";
         let depth = 0;
         for (let word of ugly.split(" ")) {
+            if (["}\n]"].includes(word.trim())) {
+                pretty += `<br/>${"&#8195;".repeat(depth)}}<br/>]`.trim();
+            } else {
+                pretty += `${["]", "},"].includes(word.trim()) ? "<br/>" : ""}${"&#8195;".repeat(depth)}${word}${["[", "{"].includes(word.trim()) ? "<br/>" : ""}`.trim();
+            }
             if (word.trim() == "[" || word.trim() == "{") depth++;
             if (word.trim() == "]" || word.trim() == "},") depth--;
-            if (["}\n]"].includes(word.trim())) {
-                pretty += `<br/>${"&#8195;".repeat(depth)}}<br/>]`;
-            } else {
-                pretty += `${["]", "},"].includes(word.trim()) ? "<br/>" : ""}${"&#8195;".repeat(depth)}${word}${["[", "{"].includes(word.trim()) ? "<br/>" : ""}`;
-            }
         }
         return pretty;
     }
