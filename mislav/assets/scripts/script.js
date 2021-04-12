@@ -61,6 +61,7 @@ import { createAddIngredient, createRemoveIngredient, createCartItem } from "./e
             addToCart({
                 ID: cart.length > 0 ? cart[cart.length - 1].ID + 1 : 0
             });
+            burger = [];
             updateScreen();
         };
         btnDeleteSession.onclick = () => {
